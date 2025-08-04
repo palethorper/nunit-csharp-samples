@@ -8,6 +8,7 @@ namespace Money
 	/// </summary>
 	/// 
 	[TestFixture]
+    [Category("Money")]
     public class MoneyTest
     {
         private Money f12CHF;
@@ -39,6 +40,7 @@ namespace Money
         /// </summary>
         /// 
         [Test]
+        [Category("Arithmetric")]
         public void BagMultiply()
         {
             // {[12 CHF][7 USD]} *2 == {[24 CHF][14 USD]}
@@ -54,6 +56,7 @@ namespace Money
         /// </summary>
         /// 
         [Test]
+        [Category("Arithmetric")]
         public void BagNegate()
         {
             // {[12 CHF][7 USD]} negate == {[-12 CHF][-7 USD]}
@@ -67,6 +70,7 @@ namespace Money
         /// </summary>
         /// 
         [Test]
+        [Category("Arithmetric")]
         public void BagSimpleAdd()
         {
             // {[12 CHF][7 USD]} + [14 CHF] == {[26 CHF][7 USD]}
@@ -80,6 +84,7 @@ namespace Money
         /// </summary>
         /// 
         [Test]
+        [Category("Arithmetric")]
         public void BagSubtract()
         {
             // {[12 CHF][7 USD]} - {[14 CHF][21 USD] == {[-2 CHF][-14 USD]}
@@ -93,6 +98,7 @@ namespace Money
         /// </summary>
         /// 
         [Test]
+        [Category("Arithmetric")]
         public void BagSumAdd()
         {
             // {[12 CHF][7 USD]} + {[14 CHF][21 USD]} == {[26 CHF][28 USD]}
@@ -119,6 +125,7 @@ namespace Money
         /// </summary>
         /// 
         [Test]
+        [Category("Arithmetric")]
         public void MixedSimpleAdd()
         {
             // [12 CHF] + [7 USD] == {[12 CHF][7 USD]}
@@ -132,6 +139,7 @@ namespace Money
         /// </summary>
         /// 
         [Test]
+        [Category("Arithmetric")]
         public void MoneyBagEquals()
         {
             //NOTE: Normally we use Assert.AreEqual to test whether two
@@ -164,6 +172,7 @@ namespace Money
         /// </summary>
         /// 
         [Test]
+        [Category("Arithmetric")]
         public void MoneyEquals()
         {
             //NOTE: Normally we use Assert.AreEqual to test whether two

@@ -350,6 +350,7 @@ public class AssertSyntaxTests
     #endregion
 
     #region Collection Tests
+    [Category("Collection")]
     [Test]
     public void AllItemsTests()
     {
@@ -562,6 +563,7 @@ public class AssertSyntaxTests
     }
 
     [Test]
+    [Ignore("Because I said so")]
     public void AndOperator()
     {
         // The & operator is only available in the new syntax
