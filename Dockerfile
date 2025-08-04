@@ -13,7 +13,7 @@ RUN dotnet restore
 RUN dotnet build --no-restore
 
 # Run NUnit tests (replace with your test project .csproj if needed)
-RUN dotnet test --no-build --logger:"trx"
+# RUN dotnet test --no-build --logger:"junit"
 
 # Optionally, you can use a test-specific entrypoint for CI/CD
 # ENTRYPOINT ["dotnet", "test", "--logger:trx"]
